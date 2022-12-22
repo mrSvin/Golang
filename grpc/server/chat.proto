@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package chat;
+option go_package = "github.com/protobuf";
 
 message Message {
   string body = 1;
