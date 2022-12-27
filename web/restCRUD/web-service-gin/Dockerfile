@@ -1,19 +1,7 @@
-FROM golang:1.19
-
-# Set the Current Working Directory inside the container
+FROM golang:latest
+RUN mkdir /app
+ADD . /app/
 WORKDIR /app
-
-# Copy everything from the current directory to the PWD(Present Working Directory) inside the container
-COPY . .
-
-# Download all the dependencies
-RUN go get -d -v ./...
-
-# Install the package
-RUN go install -v ./...
-
-# This container exposes port 8080 to the outside world
+RUN go build -o /docker-rest
 EXPOSE 8090
-
-# Run the executable
-CMD ["go-sample-app"]
+CMD ["/docker-rest"]

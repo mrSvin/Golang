@@ -21,9 +21,15 @@ var albums = []album{
 
 func RestInfo() {
 	router := gin.Default()
+	router.GET("/", getHome)
 	router.GET("/albums", getAlbums)
 	router.GET("/names", getNames)
 	router.Run("localhost:8090")
+}
+
+func getHome(c *gin.Context) {
+	fmt.Println("ok")
+	c.IndentedJSON(http.StatusOK, "ok")
 }
 
 func getAlbums(c *gin.Context) {
