@@ -17,15 +17,26 @@
 - При невалидном токене, невалидном логине или пароле вывод сообщений об этом.
 
 ## Тестирование сервиса с помощью Postman
-- Авторизация:
+Авторизация:
+
 ![image](https://user-images.githubusercontent.com/59051004/209806769-1a21f57b-1e18-4cd3-95c3-a0ed8a1c61d8.png)
-- Логаут:
+
+Логаут:
+
 ![image](https://user-images.githubusercontent.com/59051004/209807175-87020053-2131-4aa7-a641-75286f557759.png)
-- Получение контента на основании jwt в куки:
+
+Получение контента на основании jwt в куки:
+
 ![image](https://user-images.githubusercontent.com/59051004/209807392-168d30b8-70bd-4778-b51d-a7553f04cecb.png)
-- Получение контента на основании Authorization Bearer Token:
+
+Получение контента на основании Authorization Bearer Token:
+
 ![image](https://user-images.githubusercontent.com/59051004/209807984-9f987ba8-3982-4b89-af2b-64ced2a16c81.png)
-- Попытка авторизации при некорректном пароле:
+
+Попытка авторизации при некорректном пароле:
+
 ![image](https://user-images.githubusercontent.com/59051004/209808315-194169a9-da95-4a4f-9c9e-7b77c8a538cb.png)
-- Попытка получение контента при невалидном токене:
+
+Попытка получение контента при невалидном токене:
+
 ![image](https://user-images.githubusercontent.com/59051004/209808465-95fc1261-2e8c-4512-a08d-8b08a38cd096.png)
