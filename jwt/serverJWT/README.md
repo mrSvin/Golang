@@ -4,7 +4,7 @@
 - go get github.com/lib/pq
 - go get github.com/golang-jwt/jwt/v4
 
-## В базе данных необходима схема auth, таблица auth_jwt, в неё для примера добавлем двух пользователей:
+## В базе данных необходима схема auth, в ней таблица auth_jwt, в неё для примера добавлем двух пользователей:
 ![image](https://user-images.githubusercontent.com/59051004/209807039-3419c076-c165-4a7f-9548-0a65b2eb387a.png)
 
 ## Реализованные функции
